@@ -9,7 +9,9 @@
   </head>
 
   <body>
+  <%= link_to "Статьи ", posts_path %> |
+
   <%= link_to "Новая статья", new_post_path %>
-    <%= yield %>
+      <%= yield %>
   </body>
 </html>
