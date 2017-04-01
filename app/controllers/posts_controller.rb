@@ -17,6 +17,11 @@ class PostsController < ApplicationController
   	  redirect_to @post
   	else
   	  render :new
+  	end
+
+  def edit
+  	@post = Post.find(params[:id])
+  end
 
   end
 
