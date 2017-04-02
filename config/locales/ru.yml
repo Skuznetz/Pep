@@ -1,2 +1,15 @@
 ru:
-  hello: 'Привет'
+  common:
+    errors: 'Ошибки при заполнении'
+    back: 'Вернутся'
+  posts:
+    index:
+      title: 'Статьи'
+
+    new:
+      title: 'Новая статья'
+    edit:
+      title:  'Изменить статью'
+    form:
+      submit:
+        '%{action} статью'

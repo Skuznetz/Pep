@@ -29,8 +29,8 @@
 </div>
 
 <div class="form-group">
-  <%= f.submit 'Сохранить',class: 'btn btn-prymary' %>
-  <%= link_to 'Вернутся' , :back, class: 'btn btn-outline-secondary' %>
+  <%= f.submit t('.submit', action: @post.new_record??  'Создать' : 'Изменить'),class: 'btn btn-prymary' %>
+  <%= link_to t('Вернутся') , :back, class: 'btn btn-outline-secondary' %>
 </div>
 
 <% end %>
