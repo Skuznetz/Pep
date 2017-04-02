@@ -1,20 +1,20 @@
 <%= form_for @post do |f| %>
-<div class="form-control">
+<div class="form-group">
 <%= f.label :title %>
 <%= f.text_field :title %>
 </div>
 
-<div class="form-control">
+<div class="form-group">
 <%= f.label :summary %>
 <%= f.text_area :summary %>
 </div>
 
-<div class="form-control">
+<div class="form-group">
 <%= f.label :body %>
 <%= f.text_area :body %>
 </div>
 
-<div class="form-control">
+<div class="form-group">
   <%= f.submit 'Сохранить' %>
 </div>
 

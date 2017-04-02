@@ -30,9 +30,11 @@
   <%= link_to 'Новая статья', new_post_path,class: 'btn btn-outline-primary pull-xs-right' %>
 </nav>
 </div>
-  <%= link_to "Статьи ", posts_path %> |
+<div class="container main">
 
-  <%= link_to "Новая статья", new_post_path %>
       <%= yield %>
+</div>
+ 
+     
   </body>
 </html>
