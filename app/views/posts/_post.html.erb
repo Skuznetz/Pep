@@ -11,7 +11,8 @@
   </small>
 </section>
 
-<section class="post-symmary">
+<section class="post- clearfix">
+<%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' %>
   <%= post.summary %>
 </section>
 </article>
