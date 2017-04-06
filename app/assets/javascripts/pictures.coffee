@@ -5,7 +5,7 @@ if attachment.file
   return sendFile(attachment)
   return
 
-  document.addEnentListener 'trix-attachment-remove', (event) ->
+  document.addEventListener 'trix-attachment-remove', (event) ->
   attachment = event.attachment
   deleteFile attachment
 

@@ -5,6 +5,7 @@ class PicturesController < ApplicationController
   	respond_to do |format| 
   	  format.json {render :json => {url: @picture.image.url(:large),picture_id: @picture.id } }
   end
+end
 
   def destroy
   	picture = Picture.find(params[:id])
