@@ -9,11 +9,12 @@
   </head>
 
   <body>
+  
   <div class="container">
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ <!--  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> -->
  
    <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
@@ -44,15 +45,13 @@
       <div class="col-md-9">
       <%= yield %>
       </div>
-      <div class="col-md-3">
-        <% tag_cloud(Tag.counts,%{tag1 tag2 tag3 tag4 tag5 }) do |tag,css_class|  %>
+       <div class="col-md-3">
+        <% tag_cloud(Tag.counts,%w{tag1 tag2 tag3 tag4 tag5 }) do |tag,css_class|  %>
         <%= link_to tag.name,tag_path(tag.name), class: css_class %>
         <% end %>
-      </div>
-
+      </div>  
       </div>
 </div>
- 
-     
+       
   </body>
 </html>
