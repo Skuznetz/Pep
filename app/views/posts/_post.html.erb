@@ -11,8 +11,8 @@
   </small>
 </section>
 
-<section class="post- clearfix">
-<%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image?%>
+<section class="post-summary clearfix">
+<%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image? %>
   <%= post.summary %>
 </section>
 
