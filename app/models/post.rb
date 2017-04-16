@@ -1,6 +1,8 @@
 class Post < ApplicationRecord
   mount_uploader :image, ImageUploader
   validates :title, :summary, :body,presence: true
+  has_many :taggings
+  has_many :tags,through: :taggings
 
   def all_tags
   	self.tags.map(&:name).join(',')
