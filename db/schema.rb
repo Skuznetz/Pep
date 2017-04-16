@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170407085934) do
 
   create_table "pictures", force: :cascade do |t|
@@ -17,6 +18,9 @@ ActiveRecord::Schema.define(version: 20170407085934) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+=======
+ActiveRecord::Schema.define(version: 20170414165009) do
+>>>>>>> 1ветка
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"

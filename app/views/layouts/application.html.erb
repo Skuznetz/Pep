@@ -42,6 +42,7 @@
       </div>
       </div>
       <div class="row">
+<<<<<<< HEAD
       <div class="col-md-9">
       <%= yield %>
       </div>
@@ -50,6 +51,17 @@
         <%= link_to tag.name,tag_path(tag.name), class: css_class %>
         <% end %>
       </div>  
+=======
+      <div class="col-md-8">
+      <%= yield %>
+      </div>
+      
+      <div class="col-md-4">
+      <% tag_cloud(Tag.counts,%w{tag1 tag2 tag3 tag4 tag5}) do |tag,css_class| %>
+      <%= link_to tag.name,tag_path(tag.name),class: css_class %>
+      <% end %>
+      </div>
+>>>>>>> 1ветка
       </div>
 </div>
        

@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 <h1><%= @tag.name %></h1>
 
 <% if @tag.posts.empty? %>
   <h2>Статей нет</h2>
 <% else %>
   <%= render @tag.posts %>
+=======
+<h1><%=@tag.name %></h1>
+<% if @tag.posts.empty? %>
+	<h2>Статей нет</h2>
+<% else %>
+<%= render @tag.posts %>
+>>>>>>> 1ветка
 <% end %>
