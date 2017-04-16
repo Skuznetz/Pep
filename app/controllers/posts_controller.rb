@@ -51,11 +51,9 @@ class PostsController < ApplicationController
   end
 
   def post_params
-<<<<<<< HEAD
-  	params.require(:post).permit(:title,:summary,:body,:image, :all_tags)
-=======
+
   	params.require(:post).permit(:title,:summary,:body,:image,:all_tags)
->>>>>>> 1ветка
+
   end
 end
 

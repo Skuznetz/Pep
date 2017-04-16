@@ -12,22 +12,14 @@
   </small>
 </section>
 
-<<<<<<< HEAD
-<section class="post-summary clearfix">
-<%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image? %>
-=======
-
-
 <section class="post-symmary clearfix">
   <%= image_tag post.image.url(:thumb),class: 'img-thumbnail thumb' if post.image? %>
->>>>>>> 1ветка
+
   <%= post.summary %>
 </section>
 
 
-<section class="footer-summary">
-<%= raw post.tags.map(&:name).map { |t| link_to t,tag_path(t), class: 'tag tag-primary' }.join(' ')%>
-</section>
+
 </article>
 
 <selection class="footer summary">
