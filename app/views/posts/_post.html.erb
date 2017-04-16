@@ -1,6 +1,3 @@
-<selection class="footer summary">
- <%= raw post.tags.map(&:name).map { |t| link_to t,tag_path(t),class: 'tag tag-primary'}.join(' ') %>
-</selection>
 
 <article class="post">
 <section class="post-head">
@@ -22,6 +19,11 @@
   <%= post.summary %>
 </section>
 </article>
+
+<selection class="footer summary">
+ <%= raw post.tags.map(&:name).map { |t| link_to t,tag_path(t),class: 'tag tag-primary'}.join(' ') %>
+</selection>
+
 
 
 
