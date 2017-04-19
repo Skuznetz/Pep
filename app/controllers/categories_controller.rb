@@ -7,4 +7,20 @@ class CategoriesController < ApplicationController
 
   def show
   end
+
+  def new
+  	@category = Category.new
+  end
+
+  def create
+  	@category = Category.new(category_params)
+  	if @category.save
+  	  redirect_to categories_path,success: 'Категория создана'
+  	else
+  	  flash[:danger] = 'Категория не создана'
+  	  render :new
+  	end
+  end
+
+  
 end
