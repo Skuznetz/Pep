@@ -38,4 +38,14 @@ class CategoriesController < ApplicationController
   	@category.destroy
   	redirect_to categories_path,success: 'Категория удалена'
   end
+
+  private
+
+  def set_category
+  	@category = Category.find(params[:id])
+  end
+
+  def category_params
+  	params.require(:category).permit(:name)
+  end
 end
