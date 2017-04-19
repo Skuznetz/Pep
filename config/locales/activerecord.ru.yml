@@ -3,6 +3,8 @@ ru:
     models:
       post: 'Статья'
     attributes:
+      category:
+        name: 'Название'
       post:
         title: 'Название '
         summary: 'Краткая статья '
