@@ -39,6 +39,7 @@ gem 'bootstrap','~> 4.0.0alpha6'
 source 'https://rails-assets.org' do 
   gem'rails-assets-tether','>1.1.0'
 end
+gem 'ancestry'
 
  gem 'carrierwave','>= 1.0.0.beta','<2.0'
 
