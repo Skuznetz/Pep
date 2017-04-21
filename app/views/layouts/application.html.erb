@@ -50,6 +50,7 @@
       <div class="col-md-4">
       <%= render 'shared/submenu' %>
       <div class="tag_cloud">
+      <h2>Tэги</h2>
       <% tag_cloud(Tag.counts,%w{tag1 tag2 tag3 tag4 tag5}) do |tag,css_class| %>
       <%= link_to tag.name,tag_path(tag.name),class: css_class %>
       <% end %>
