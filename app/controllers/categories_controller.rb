@@ -19,6 +19,7 @@ class CategoriesController < ApplicationController
   	if @category.save
   	  redirect_to categories_path,success: 'Категория создана'
   	else
+      @categories = Category.all.order(:name)
   	  flash[:danger] = 'Категория не создана'
   	  render :new
   	end
@@ -32,6 +33,7 @@ class CategoriesController < ApplicationController
   	if @category.update_attributes(category_params)
   	  redirect_to categories_path,success: 'Категория обновлена'
   	else
+      @categories = Category.where("id != #{@category.id}").order(:name)
       flash[:danger] = 'Категория не обновлена'
       render :edit
     end
