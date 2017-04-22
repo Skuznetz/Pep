@@ -11,6 +11,7 @@ class CategoriesController < ApplicationController
 
   def new
   	@category = Category.new
+    @categories = Category.all.order(:name)
   end
 
   def create
