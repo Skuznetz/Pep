@@ -40,6 +40,7 @@ source 'https://rails-assets.org' do
   gem'rails-assets-tether','>1.1.0'
 end
 gem 'ancestry'
+gem 'pg', '~> 0.18'
 
  gem 'carrierwave','>= 1.0.0.beta','<2.0'
 
