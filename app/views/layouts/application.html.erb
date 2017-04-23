@@ -32,16 +32,20 @@
   
   <%#<%= link_to 'Новая статья', new_post_path,class: 'btn btn-outline-primary pull-xs-right' %>
   <ul class="navbar-nav">
+    <% if user_signed_in? %>
+     <li class="nav-item">
+        <%= link_to "Выход",destroy_user_session_path,method: :delete,class: "nav-link" %>
+      </li>
+      <% else %>
       <li class="nav-item">
-        <a class="nav-link" href="<%= new_user_session_path %>">Вход</a>
+        <%= link_to "Вход",new_user_session_path,class: "nav-link" %>
       </li>
      <!--  <li class="nav-item">
         <a class="nav-link" href="#">Контакты</a>
       </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="<%= new_user_registration_path %>">Регистрация</a>
-      </li>
-      
+        <%= link_to "Регистрация",new_user_registration_path,class: "nav-linl" %>
+      <% end %>
     </ul>
 
 
