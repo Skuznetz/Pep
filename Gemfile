@@ -41,6 +41,7 @@ source 'https://rails-assets.org' do
 end
 gem 'ancestry'
 gem 'pg', '~> 0.18'
+gem 'devise'
 
  gem 'carrierwave','>= 1.0.0.beta','<2.0'
 
