@@ -8,7 +8,7 @@
     |
     <%= link_to @post.category.name,@post.category %>
     <% end %>
-    <% if user_signet_in? %>
+    <% if user_signed_in? %>
     |
     <%= link_to 'Изменить', edit_post_path(@post)%>
     |
