@@ -15,7 +15,7 @@ class Admin::CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     if @category.save
-      redirect_to categories_path,success: 'Категория создана'
+      redirect_to admin_categories_path,success: 'Категория создана'
     else
       @categories = Category.all.order(:name)
       flash[:danger] = 'Категория не создана'
@@ -29,7 +29,7 @@ class Admin::CategoriesController < ApplicationController
 
   def update 
     if @category.update_attributes(category_params)
-      redirect_to categories_path,success: 'Категория обновлена'
+      redirect_to admin_categories_path,success: 'Категория обновлена'
     else
       @categories = Category.where("id != #{@category.id}").order(:name)
       flash[:danger] = 'Категория не обновлена'

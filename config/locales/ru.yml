@@ -16,7 +16,7 @@ ru:
     form:
       submit:
         '%{action} статью'
-
+  admin:
   categories:
     index:
       title: 'Категории'
