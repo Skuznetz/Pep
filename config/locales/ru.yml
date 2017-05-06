@@ -8,7 +8,8 @@ ru:
   posts:
     index:
       title: 'Статьи'
-
+  admin:
+    posts:
     new:
       title: 'Новая статья'
     edit:
@@ -16,15 +17,15 @@ ru:
     form:
       submit:
         '%{action} статью'
-  admin:
-  categories:
-    index:
-      title: 'Категории'
+  
+    categories:
+      index:
+        title: 'Категории'
 
-    new:
-      title: 'Новая категория'
-    edit:
-      title:  'Изменить категорию'
-    form:
-      submit:
+      new:
+        title: 'Новая категория'
+      edit:
+        title:  'Изменить категорию'
+      form:
+        submit:
         '%{action} категорию'
