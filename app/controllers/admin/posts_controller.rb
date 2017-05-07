@@ -11,7 +11,7 @@ class Admin::PostsController < ApplicationController
   def create
   	@post =Post.new(post_params)
   	if @post.save
-  	  redirect_to [:admin,@post] , success: 'Статья создана'   
+  	  redirect_to @post , success: 'Статья создана'   
   	else
       flash.now[:danger] ='Статья не создана'
   	  render :new
@@ -23,7 +23,7 @@ class Admin::PostsController < ApplicationController
 
   def update
   	if @post.update_attributes(post_params)
-  	  redirect_to [:admin,@post],success: 'Статья изменена'
+  	  redirect_to @post,success: 'Статья изменена'
 
   	else
       flash.now[:danger ] ='Статья не изменилась'
