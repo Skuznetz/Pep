@@ -1,5 +1,5 @@
-class Admin::PostsController < ApplicationController
-  before_action :authenticate_user!
+class Admin::PostsController < Admin::AdminController
+
   before_action :find_post ,only: [:edit,:update,:destroy]
 
  
