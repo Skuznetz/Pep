@@ -8,8 +8,8 @@ ru:
   posts:
     index:
       title: 'Статьи'
-  admin:
-    posts:
+  
+    
     new:
       title: 'Новая статья'
     edit:
