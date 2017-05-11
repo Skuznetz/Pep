@@ -10,9 +10,9 @@
     <% end %>
     <% if user_signed_in? && current_user.admin? %>
     |
-    <%= link_to 'Изменить', edit_post_path(post)%>
+    <%= link_to 'Изменить', edit_admin_post_path(post)%>
     |
-    <%= link_to 'удалить', post_path(post), method: :delete, data: { confirm: 'Вы уверены в этом?'} %>
+    <%= link_to 'удалить', admin_post_path(post), method: :delete, data: { confirm: 'Вы уверены в этом?'} %>
     <% end %>
   </small>
 </section>
