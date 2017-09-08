@@ -50,10 +50,6 @@ gem 'trix'
 gem 'will_paginate'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-end
-group :development, :test do
   gem 'rspec-rails', '~> 3.6.0'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13.0'
