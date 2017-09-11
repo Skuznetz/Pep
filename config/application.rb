@@ -14,12 +14,7 @@ module Pep
     # -- all .rb files in that directory are automatically loaded.
     config.time_zone = 'Moscow'
     config.i18n.default_locale = :ru
-    config.generators do |g|
-      g.test_framework :rspec,
-        fixtures: false,
-        view_specs: false,
-        helper_specs: false,
-        routing_specs: false
+    
     end
 
   end
